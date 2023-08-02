@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<header>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pórtifolo</title>
+
+  <!-- box icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <!--  css -->
+  <link rel="stylesheet" href="css/style.css" />
+</header>
+
+<body>
+  <!-- header design -->
+  <header class="header">
+    <a href="#" class="logo">Portifolio</a>
+
+    <i class="bx bx-menu" onclick="menuIcon()" id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">Sobre</a>
+      <a href="#tecnologias">Tecnologias</a>
+      <a href="#projects">Projetos</a>
+      <a href="#contact">Contatos</a>
+    </nav>
+  </header>
+
+  <!-- home section design -->
+  <section class="home" id="home">
+
+    <div class="home-content">
+      <h3>Olá, eu sou </h3>
+      <h1>Lucileide Elpidio</h1>
+      <h3> Sou uma <span class="multiple-text"></span> </h3>
+      <p> Uma entusiasta desenvolvedora full stack apaixonada por tecnologia e sempre em busca de
+        novos desafios.</p>
+
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/lucileide-elpidio/"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/Lucileide-Elpidio"><i class='bx bxl-github'></i></a>
+        <a href="mailto:lucileideelpidio@gmail.com"><i class='bx bx-envelope'></i></a>
+        <a href="https://api.whatsapp.com/send?phone=5511987475629"><i class='bx bxl-whatsapp'></i></a>
+      </div>
+
+      <a href="https://drive.google.com/u/0/uc?id=1VAinGJ1vZhp8cIjlBmrTE0KpFl-t4lxB&export=download"
+        class="btn">Download CV PDF</a>
+      <a href="#" class="btn">Download CV Word</a>
+    </div>
+
+    <div class="home-img">
+      <img src="./images/foto perfil.png" alt="logo-home">
+    </div>
+  </section>
+  <!-- about section design -->
+
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="./images/foto perfil.png" alt="logo-about">
+    </div>
+
+    <div class="about-content">
+      <h2 class="heading">Sobre</h2>
+      <h3><span>Desenvolvedora Full Stack</span></h3>
+      <p>
+
+        Sou uma desenvolvedora Full Stack apaixonada por tecnologia e com experiência no desenvolvimento de aplicações
+        web modernas. Minha jornada no mundo da programação começou com o fascinante trio HTML, CSS e JavaScript, e
+        desde então venho me aprimorando e explorando as mais diversas tecnologias e frameworks.
+
+
+      <p>Meu foco está em criar soluções inovadoras e escaláveis, sempre atenta às melhores práticas de desenvolvimento
+        e buscando constantemente aprimorar meus conhecimentos. Sou movida por desafios e apaixonada por encontrar
+        soluções criativas para problemas complexos.
+
+        Além do meu conhecimento técnico, sou uma entusiasta do aprendizado contínuo e estou sempre em busca de novas
+        oportunidades para me aprimorar e contribuir ainda mais para projetos incríveis.
+
+        Se você procura uma desenvolvedora Full Stack comprometida, colaborativa e pronta para enfrentar qualquer
+        desafio, adoraria conversar sobre como posso agregar valor ao seu time ou projeto. Vamos criar juntos o próximo
+        grande sucesso da web! 🌐💻
+        🚀</p>
+
+    </div>
+  </section>
+
+  <!-- services section design -->
+
+  <section class="tecnologias" id="tecnologias">
+    <h2 class="heading"><span>Tecnologias</span></h2>
+    <div class="services-container">
+      <i class='bx bxl-html5'></i>
+      <i class='bx bxl-css3'></i>
+      <i class='bx bxl-javascript'></i>
+      <i class='bx bxl-react'></i>
+      <i class='bx bxl-nodejs '></i>
+      <i class='bx bxl-mongodb '></i>
+      <i class='bx bxl-github'></i>
+      <i class='bx bxl-git'></i>
+    </div>
+  </section>
+
+  <!-- portfolio section design -->
+
+  <section class="projects" id="projects">
+    <h2 class="heading">Meus <span>Projetos</span></h2>
+
+    <div class="projects-container">
+
+      <div class="projects-box">
+        <img src="./images/cadastro.png" alt="projects">
+
+        <div class="projects-layer">
+          <h4>Cadastro de usuários</h4>
+          <p> O componente "Home" é responsável por exibir um formulário de cadastro onde o usuário pode inserir seu
+            nome e idade e, ao clicar no botão "Cadastrar", os dados são enviados para a API de backend e o novo usuário
+            é adicionado à lista de usuários localmente.O componente "Users" é responsável por exibir uma lista de todos
+            os usuários cadastrados. Ele faz uma
+            solicitação à API para obter os dados dos usuários existentes assim que o componente é montado.</p>
+          <div class="link-repositorio">
+            <a href="https://github.com/Lucileide-Elpidio/User-registration"><i class='bx bxl-github bx-tada'></i></a>
+            <a href="https://user-registration-1.netlify.app/"><i class='bx bx-link bx-tada'></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-box">
+        <img src="./images/conversor.png" alt="projects">
+
+        <div class="projects-layer">
+          <h4>Conversor</h4>
+          <p>O Conversor de Moedas é uma aplicação que permite converter valores entre diferentes moedas, incluindo Real
+            Brasileiro (BRL), Dólar Americano (USD), Euro (EUR) e Bitcoin (BTC). Com taxas de câmbio atualizadas através
+            do consumo de API o conversor fornece resultados precisos e em tempo real..</p>
+          <div class="link-repositorio">
+            <a href="https://github.com/Lucileide-Elpidio/currency-converter"><i class='bx bxl-github bx-tada'></i></a>
+            <a href="https://currency-converter3.netlify.app/"><i class='bx bx-link bx-tada'></i></a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="projects-box">
+        <img src="./images/cronometro.png" alt="projects">
+
+        <div class="projects-layer">
+          <h4>Cronômetro</h4>
+          <p>O cronômetro exibe o tempo decorrido em horas, minutos e segundos, e possui funcionalidades básicas como
+            iniciar, pausar e resetar.O projeto utiliza a função setInterval() do JavaScript para atualizar o cronômetro
+            a cada segundo. Também
+            inclui uma função para formatar os números e sempre exibir dois dígitos, garantindo uma representação visual
+            consistente.</p>
+          <div class="link-repositorio">
+            <a href="https://github.com/Lucileide-Elpidio/Chronometer"><i class='bx bxl-github bx-tada'></i></a>
+            <a href="https://chronometer-1.netlify.app/"><i class='bx bx-link bx-tada'></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-box">
+        <img src="./images/sorteador.png" alt="projects">
+
+        <div class="projects-layer">
+          <h4>Sorteador</h4>
+          <p>Este é um projeto de sorteio de números aleatórios desenvolvido em JavaScript, HTML e CSS.O usuário pode
+            inserir o valor mínimo e máximo para o sorteio,a página usa JavaScript para gerar um número aleatório dentro
+            do intervalo especificado,os valores mínimo e máximo são arredondados para garantir resultados precisos e o
+            número sorteado é exibido em tempo real na página usando o DOM do JavaScript.</p>
+          <div class="link-repositorio">
+            <a href="https://github.com/Lucileide-Elpidio/Dev-Sorteio"><i class='bx bxl-github bx-tada'></i></a>
+            <a href="https://dev-sorteio.netlify.app/"><i class='bx bx-link bx-tada'></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-box">
+        <img src="./images/jokenpo.png" alt="projects">
+
+        <div class="projects-layer">
+          <h4>Jokenpô</h4>
+          <p>Neste projeto, criei um jogo de Pedra, Papel e Tesoura, onde os jogadores podem desafiar a máquina,você
+            verá três opções: pedra, papel e tesoura. Clique em uma das opções para fazer sua jogada. A máquina fará sua
+            jogada automaticamente. O resultado do jogo será exibido na tela, juntamente com uma imagem representando o
+            resultado. Os placares de pontos do jogador e da máquina também serão atualizados de acordo com o resultado.
+          </p>
+          <div class="link-repositorio">
+            <a href="https://github.com/Lucileide-Elpidio/Jokenpo"><i class='bx bxl-github bx-tada'></i></a>
+            <a href="https://jokenpo-1.netlify.app/"><i class='bx bx-link bx-tada'></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- contact section design -->
+
+  <section class="contact" id="contact">
+    <h2 class="heading">Entre em <span>Contato</span></h2>
+
+    <form action="#">
+      <div class="input-box">
+        <input type="text" placeholder="Nome">
+        <input type="email" placeholder="e-mail">
+      </div>
+
+      <div class="input-box">
+        <input type="number" placeholder="Telefone" class="input-number">
+        <input type="text" placeholder="Assunto do e-mail">
+      </div>
+
+      <textarea name="" id="" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
+      <input type="submit" value="Enviar mensagem" class="btn">
+
+    </form>
+  </section>
+  <!-- footer design -->
+
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2023 by Lucileide Elpidio | Feito com amor <i class='bx bx-heart'></i></p>
+    </div>
+
+    <div class="footer-iconTop">
+      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+
+  </footer>
+
+  <!-- scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- typed js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <script src="https://www.napoleon.com.br/codigos/confetti.min.js"></script>
+
+
+  <!-- custom js -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
